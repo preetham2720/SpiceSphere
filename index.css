@@ -86,6 +86,7 @@ h1, h2, h3 {
     height: 100%;
     padding: 20px;
     left: -50%;
+    transition: all 1s;
 }
 
 .sidebar p{
