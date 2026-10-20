@@ -8,6 +8,10 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
@@ -42,23 +46,70 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #B83226;
+    color: #f0442e;
     gap: 50px;
 }
 
 .navbar-sub-links a{
-    cursor: pointer;
+    text-decoration: none;
+    color: #f0442e;
 }
 
 .navbar-sub-links a:hover{
+    cursor: pointer;
     text-decoration: underline;
 }
 
 .navbar-sub-icons{
     display: flex;
     justify-content: space-between;
-     align-items: center;
+    align-items: center;
     gap: 23px;
+}
+
+.navbar-sub-icons i:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.navbar_menu-icon{
+    display: block;
+}
+
+.sidebar{
+    background-color: #3c1c12;
+    color: #FFF8EC;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    left: -50%;
+}
+
+.sidebar p{
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.sidebar i:hover{
+    opacity: 0.8;
+}
+
+.sidebar-sub-links{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sidebar-sub-links a{
+    text-decoration: none;
+    color: #FFF8EC;
+}
+
+.sidebar-sub-links a:hover{
+    text-decoration: underline;
 }
 
 .banner_img{
@@ -441,6 +492,14 @@ h1, h2, h3 {
 
     .navbar-sub{
         display: flex;
+    }
+
+    .navbar_menu-icon{
+        display: none;
+    }
+
+    .sidebar{
+        left: -50%;
     }
 
     .banner_img-content{

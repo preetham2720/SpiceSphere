@@ -22,9 +22,10 @@
     <!-- nav bar section -->
     <nav class="navbar">
         <img src="./image/SpiceSphere Culinary Emblem.png" alt="">
+        <i id="navbar_menu-icon" class="fa-solid fa-bars navbar_menu-icon" style="color: #f0442e;"></i>
         <div class="navbar-sub">
             <div class="navbar-sub-links">
-                <a>Home</a>
+                <a href="index.html">Home</a>
                 <a>Recipes</a>
                 <a>Cooking Classes</a>
                 <a>Products</a>
@@ -36,6 +37,17 @@
             </div>
         </div>
     </nav>
+
+    <!-- side bar section -->
+    <section id="sidebar" class="sidebar">
+        <p><i id="sidebar-close" class="fa-solid fa-xmark" style="color: #FFF8EC;"></i></p>
+        <div id="sidebar-sub-links" class="sidebar-sub-links">
+            <a href="index.html">Home</a>
+            <a>Recipes</a>
+            <a>Cooking Classes</a>
+            <a>Products</a>
+        </div>
+    </section>
 
     <!-- banner section -->
     <section class="banner">
@@ -102,7 +114,7 @@
             </div>
             <div class="popular_card_1-label">
                 <h3>Panner Butter Masala</h3>
-                <h3 class="popular_card_1-label-heart"><i class="fa-regular fa-heart" style="color: #F0442E;"></i></h3>
+                <h3 class="popular_card_1-label-heart"><i class="fa-regular fa-heart heartfav" style="color: #F0442E;"></i></h3>
                 <p><i class="fa-regular fa-clock"></i>  45 mins</p>
             </div>
         </div>
@@ -112,7 +124,7 @@
             </div>
             <div class="popular_card_1-label">
                 <h3>Panner Tikka</h3>
-                <h3 class="popular_card_1-label-heart"><i class="fa-regular fa-heart" style="color: #F0442E;"></i></h3>
+                <h3 class="popular_card_1-label-heart"><i class="fa-regular fa-heart heartfav" style="color: #F0442E;"></i></h3>
                 <p><i class="fa-regular fa-clock"></i>  30 mins</p>
             </div>
         </div>
@@ -122,7 +134,7 @@
             </div>
             <div class="popular_card_1-label">
                 <h3>Masala Dosa</h3>
-                <h3 class="popular_card_1-label-heart"><i class="fa-regular fa-heart" style="color: #F0442E;"></i></h3>
+                <h3 class="popular_card_1-label-heart"><i class="fa-regular fa-heart heartfav" style="color: #F0442E;"></i></h3>
                 <p><i class="fa-regular fa-clock"></i>  40 mins</p>
             </div>
         </div>
@@ -132,7 +144,7 @@
             </div>
             <div class="popular_card_1-label">
                 <h3>Veg Biryani</h3>
-                <h3 class="popular_card_1-label-heart"><i class="fa-regular fa-heart" style="color: #F0442E;"></i></h3>
+                <h3 class="popular_card_1-label-heart"><i class="fa-regular fa-heart heartfav" style="color: #F0442E;"></i></h3>
                 <p><i class="fa-regular fa-clock"></i>  40 mins</p>
             </div>
         </div>
@@ -233,5 +245,7 @@
         
 
     </section>
+
+    <script src="index.js"></script>
 </body>
 </html>
