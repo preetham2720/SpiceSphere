@@ -1,13 +1,13 @@
 
 var slide_menu = document.querySelector(".slide_menu")
-var side_menu = document.querySelector(".side_menu")
+var side_menu = document.getElementById("side_menu")
 var close_menu = document.getElementById("close_menu")
 
 side_menu.addEventListener("click",function(){
-    slide_menu.style.left="0%"
+    slide_menu.style.top="0%"
 })
 close_menu.addEventListener("click",function(){
-    slide_menu.style.left="-60%"
+    slide_menu.style.top="-50%"
 })
 var bannerimg = document.querySelectorAll(".banner_img");
 var bannerslide = document.querySelector(".banner_slide");

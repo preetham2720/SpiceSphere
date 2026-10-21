@@ -17,79 +17,90 @@
     padding-top: 5px;
     justify-content: space-between;
     position: sticky;
-    z-index: 5;
+    z-index: 100;
     top: 0;
+    width: 100%;
     box-shadow: 0 3px 8px rgba(0,0,0,0.12);
     
 }
 .nav_2 a{
-    color: #b83226;
+    color: #4a2419;
     text-decoration: none;
     cursor: pointer;
     
 }
 .nav_2 a:hover{
-    text-decoration: underline;
+    color: #f0442e;
 }
 .nav_2{
     display: flex;
     gap: 50px;
-    padding-left: 250px;
+}
+#rec{
+    padding-bottom: 10px;
+    border-bottom: solid 1px #f0442e;
+    color: #f0442e;
 }
 .nav_3 i{
-    color: #b83226;
+    color: #4a2419;
 }
 .nav_3 i:hover{
-    color: #4a2419;
+    color: #f0442e;
 }
 .nav_3{
     display: flex;
     gap: 20px;
 }
-.side_menu{
+#side_menu{
     display:none;
-    color: #b83226;
+    color: #49362e;
     cursor: pointer;
 }
 .slide_menu{
     display: flex;
     flex-direction: column;
-    background-color: #b83226;
-    width: 55%;
-    height: 100vh;
-    top: 0;
-    z-index: 50;
+    width: 100%;
+    height: 300px;
+    top: -50%;
+    z-index: 5;
     position: fixed;
     padding-top: 40px;
     padding-left: 30px;
     gap: 30px;
     cursor: pointer;
-    left: -60%;
-    transition : left 1s ease-in-out ;
+    transition : top 1s ease-in-out ;
+    margin-bottom: 0%;
   
     
 }
 .slide_menu a{
     text-decoration: none;
-    color: #fff3df;
+    color: #4a2419;
     background-color: transparent;
+}
+#rec_s{
+    color: #f0442e;
 }
 .slide_menu a:hover{
     text-decoration: underline;
 }
 #close_menu{
     text-align: right;
-    padding-top: 0;
-    padding-right: 15px;
-    color: #fff3df;
-    background-color: transparent;
+    padding-top: 20px;
+    padding-right: 25px;
+    color: #4a2419;
+}
+#close_menu:hover{
+    color: #f0442e;
 }
 .banner{
     width: 100%;
+    margin: 0;
+    padding: 0;
     height: 350px;
     position: relative;
     overflow: hidden;
-    
+    margin-top: 0%;
 }
 
 .banner_img{
@@ -103,6 +114,8 @@
 
 }
 .banner_slide{
+    margin: 0;
+    padding: 0;
     display: flex;
     width: 100%;
     height: 100%;
@@ -329,7 +342,7 @@ cursor: pointer;
 
 .footer {
 
-    background-color: #99565e;
+    background-color: #4a2419;
     color: white;
     padding: 30px;
     margin-top: 25px;
@@ -403,11 +416,17 @@ color: white;
 
 
 @media screen and ( max-width: 900px) {
-    .side_menu{
-        display: block;
+
+    .nav_3 a{
+        display: flex;
+        text-decoration: none;
+       
         
     }
-    .nav_2 a,.nav_3 i{
+    #side_menu{
+        display: block;
+    }
+    .nav_2 a{
         display: none;
     }
     .banner{
