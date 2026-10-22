@@ -70,8 +70,8 @@ button:hover { background-color: var(--rust-red); }
       color: var(--dark-brown); }
 .nav-links { display: flex; 
     gap: 32px; 
-    font-size: 14px; 
-    font-weight: 700; }
+    font-size: 16px;
+    font-weight: 400; }
 .nav-links a { color: var(--dark-brown); 
     padding: 6px 0; 
     border-bottom: 2px solid transparent; }

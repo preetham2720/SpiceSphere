@@ -41,8 +41,8 @@ button:focus, a:focus, input:focus, select:focus {
       height: 40px; }
 .nav-links { display: flex;
      gap: 32px;
-      font-size: 14px;
-       font-weight: 700; }
+      font-size: 16px;
+       font-weight: 400; }
 .nav-links a { padding: 6px 0;
      border-bottom: 2px solid transparent; }
 .nav-links a:hover, .nav-links a.active { color: #b83226; }
