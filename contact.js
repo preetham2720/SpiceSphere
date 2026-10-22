@@ -108,5 +108,3 @@ sendBtn.addEventListener("click", function() {
 closePopup.addEventListener("click", function() {
     successPopup.style.display = "none"
 })
-
-validateForm()
