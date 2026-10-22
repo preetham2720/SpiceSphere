@@ -135,8 +135,7 @@ h1, h2, h3 {
 
 .video_card{
     border-radius: 5px;
-    flex-grow: 1;
-    flex-basis: 50%;
+    height: 250px;
 }
 
 .video_card video{
@@ -248,12 +247,14 @@ h1, h2, h3 {
 
 .instruction_step-content-list {
     list-style: none;
-    counter-reset: my-counter;
 }
 
 .instruction_step-content-list li {
     counter-increment: my-counter;
     margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .instruction_step-content-list li::before {
@@ -262,12 +263,11 @@ h1, h2, h3 {
     color: white;
     width: 30px;
     height: 30px;
+    flex-shrink: 0;        
     border-radius: 50%;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
-    float: left;
 }
 
 .footer {
@@ -338,6 +338,30 @@ h1, h2, h3 {
     background-color: transparent;
 }
 
+.tips{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(251, 227, 180);
+    border: solid rgb(240, 212, 154) 1px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fa-lightbulb{
+    color: rgb(138, 79, 8);
+    border: none;
+    background-color: rgb(248, 207, 126);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media (min-width: 1024px) { 
     .navbar img{
@@ -369,6 +393,13 @@ h1, h2, h3 {
         justify-content: space-between;
         gap: 50px;
         height: 400px;
+    }
+
+    .video_card{
+        border-radius: 5px;
+        flex-grow: 1;
+        flex-basis: 50%;
+        height: 100%;
     }
 
     .video_content{
