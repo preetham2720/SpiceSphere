@@ -1,18 +1,8 @@
 var navbar_menu_icon = document.getElementById("navbar_menu-icon");
-var sidebar = document.getElementById("sidebar");
-var sidebar_close = document.getElementById("sidebar-close");
 var sidebar_sub_links = document.getElementById("sidebar-sub-links");
 
 navbar_menu_icon.addEventListener("click",function(){
-    sidebar.style.left = 0
-})
-
-sidebar_sub_links.addEventListener("click",function(){
-    sidebar.style.left = "-50%"
-})
-
-sidebar_close.addEventListener("click",function(){
-    sidebar.style.left = "-50%"
+    sidebar_sub_links.classList.toggle("hide");
 })
 
 // add favorites
@@ -27,3 +17,30 @@ heartfavlist.forEach((icon) => {
         }
     })
 })
+
+// Sumbit mail
+var footer_section2_sub2_mail_btn = document.getElementById("footer-section2-sub2-mail-btn");
+var notify = document.getElementById("notify");
+var mailerror = document.querySelector(".mailerror");
+var email = document.getElementById("email");
+var mailpattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+email.addEventListener("keyup",function(){
+        mailerror.style.display = "none";
+})
+
+footer_section2_sub2_mail_btn.addEventListener("click",function(){
+    if(mailpattern.test(email.value)){
+        mailerror.style.display = "none";
+        email.value = ""
+        notify.style.top = "10px";
+
+        setTimeout(function() {
+            notify.style.top = "-50%";
+        }, 3000);
+    }else{
+        mailerror.style.display = "block";
+    }
+})
+
+

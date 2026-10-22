@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="recipestyle.css">
+</head>
+
+<body>
+
+
+    <section class="nav_bar">
+        <div>
+            <img class="logo" src="images-recipes/logo.jpg">
+        </div>
+        <div class="nav_2">
+            <a href="index.html">Home</a>
+            <a id="rec" href="recipes.html">Recipes</a>
+            <a href="online.html">Cooking Classes</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="nav_3">
+            <a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a href="#">
+                <i class="fa-regular fa-user"></i>
+            </a>
+             <a href="#">
+                <i id="side_menu" class="fa-solid fa-bars"></i>
+            </a>
+
+        </div>
+       
+
+    </section>
+    <section class="slide_menu">
+        <p id="close_menu">X</p>
+        <a href="index.html">Home</a>
+        <a id="rec_s" href="recipes.html">Recipes</a>
+        <a href="online.html">Cooking Classes</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact Us</a>
+    </section>
+
+
+    <section class="banner">
+        <div class="banner_slide">
+            <img src="./images-recipes/banner_1.jpeg" class="banner_img">
+            <img src="./images-recipes/banner_2.jpeg" class="banner_img">
+            <img src="./images-recipes/banner_3.jpeg" class="banner_img">
+        </div>
+
+
+        <div class="banner_txt">
+            <h1>Browse Our Recipes</h1>
+            <p> Explore a variety of delicious Indian recipes,from traditional favorites to modern twists.
+            </p>
+            <br>
+
+            <div class="search_bar">
+                <input type="text" id="search" placeholder="Search recipes...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <i id="prev_btn" class="fa-solid fa-circle-chevron-left"></i>
+
+        <i id="next_btn" class="fa-solid fa-circle-chevron-right"></i>
+    </section>
+
+
+    <section class="recipe_sec">
+
+        <div class="recipe_filter">
+            <button id="all">All</button>
+            <button id="north">North Indian</button>
+            <button id="south">South Indian</button>
+            <button id="snacks">Snacks</button>
+            <button id="desserts">Desserts</button>
+            <button id="veg">Veg</button>
+            <button id="non-veg">Non-Veg</button>
+        </div>
+
+        <div class="recipe_container">
+
+
+            <div class="recipe_card" data-category="north non-veg">
+                <img src="images-recipes/butter_chicken.jpeg">
+                <div class="recipe_info">
+                    <h2>Butter Chicken</h2>
+                    <div class="recipe_stats">
+                        <span><i class="fa-regular fa-clock"></i> 45 mins</span>
+                        <span><i class="fa-regular fa-eye"></i> 12.5K views</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> 850 likes</span>
+                    </div>
+                    <a href="Butter Chicken.html">
+                    <button  class="watch_btn">Watch Now</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="recipe_card" data-category="north veg">
+                <img src="images-recipes/paneer_tikka.jpeg">
+                <div class="recipe_info">
+                    <h2>Paneer Tikka</h2>
+                    <div class="recipe_stats">
+                        <span><i class="fa-regular fa-clock"></i> 30 mins</span>
+                        <span><i class="fa-regular fa-eye"></i> 9.8K views</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> 720 likes</span>
+                    </div>
+                    <a href="PaneerTikka.html">
+                    <button class="watch_btn">Watch Now</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="recipe_card" data-category="north veg">
+                <img src="images-recipes/dal_tadka.jpeg">
+                <div class="recipe_info">
+                    <h2>Dal Tadka</h2>
+                    <div class="recipe_stats">
+                        <span><i class="fa-regular fa-clock"></i> 35 mins</span>
+                        <span><i class="fa-regular fa-eye"></i> 82K views</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> 640 likes</span>
+                    </div>
+                    <a href="DalTadka.html">
+                    <button class="watch_btn">Watch Now</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="recipe_card" data-category="north veg">
+                <img src="images-recipes/Aloo Paratha.jpeg">
+                <div class="recipe_info">
+                    <h2>Aloo Paratha</h2>
+                    <div class="recipe_stats">
+                        <span><i class="fa-regular fa-clock"></i> 25 mins</span>
+                        <span><i class="fa-regular fa-eye"></i> 75K views</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> 590 likes</span>
+                    </div>
+                    <a href="AlooParatha.html">
+                    <button class="watch_btn">Watch Now</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="recipe_card" data-category="south veg">
+                <img src="images-recipes/Masala_Dosa.jpeg">
+                <div class="recipe_info">
+                    <h2>Masala Dosa</h2>
+                    <div class="recipe_stats">
+                        <span><i class="fa-regular fa-clock"></i> 40 mins</span>
+                        <span><i class="fa-regular fa-eye"></i> 152K views</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> 1.2K likes</span>
+                    </div>
+                    <a href="Butter Chicken.html">
+                    <button class="watch_btn">Watch Now</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="recipe_card" data-category="veg">
+                <img src="images-recipes/chapathi roll.jpeg">
+                <div class="recipe_info">
+                    <h2>Chapathi Roll</h2>
+                    <div class="recipe_stats">
+                        <span><i class="fa-regular fa-clock"></i> 25 mins</span>
+                        <span><i class="fa-regular fa-eye"></i> 114K views</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> 920 likes</span>
+                    </div>
+                    <a href="DalTadka.html">
+                    <button class="watch_btn">Watch Now</button>
+                </a>
+                </div>
+            </div>
+
+
+            <div class="recipe_card" data-category="north veg">
+                <img src="images-recipes/afghani_paneer.jpeg">
+                <div class="recipe_info">
+                    <h2>Afghani Paneer</h2>
+                    <div class="recipe_stats">
+                        <span><i class="fa-regular fa-clock"></i> 20 mins</span>
+                        <span><i class="fa-regular fa-eye"></i> 67K views</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> 480 likes</span>
+                    </div>
+                    <a href="PaneerTikka.html">
+                    <button class="watch_btn">Watch Now</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="recipe_card" data-category="veg north snacks">
+                <img src="images-recipes/Samosa.jpeg">
+                <div class="recipe_info">
+                    <h2>Samosa</h2>
+                    <div class="recipe_stats">
+                        <span><i class="fa-regular fa-clock"></i> 35 mins</span>
+                        <span><i class="fa-regular fa-eye"></i> 105K views</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> 810 likes</span>
+                    </div>
+                    <a href="AlooParatha.html">
+                    <button class="watch_btn">Watch Now</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="recipe_card" data-category="snacks veg">
+                <img src="images-recipes/Panner_pakora.jpeg">
+                <div class="recipe_info">
+                    <h2>Paneer Pakora</h2>
+                    <div class="recipe_stats">
+                        <span><i class="fa-regular fa-clock"></i> 20 mins</span>
+                        <span><i class="fa-regular fa-eye"></i> 59K views</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> 430 likes</span>
+                    </div>
+                    <a href="Butter Chicken.html">
+                    <button class="watch_btn">Watch Now</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="recipe_card" data-category="south veg snacks">
+                <img src="images-recipes/onion_pakora.jpeg">
+                <div class="recipe_info">
+                    <h2>Onion Bhaji</h2>
+                    <div class="recipe_stats">
+                        <span><i class="fa-regular fa-clock"></i> 25 mins</span>
+                        <span><i class="fa-regular fa-eye"></i> 48K views</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> 370 likes</span>
+                    </div>
+                    <a href="PaneerTikka.html">
+                    <button class="watch_btn">Watch Now</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="recipe_card" data-category="veg desserts">
+                <img src="images-recipes/gulab_jamun.jpeg">
+                <div class="recipe_info">
+                    <h2>Gulab Jamun</h2>
+                    <div class="recipe_stats">
+                        <span><i class="fa-regular fa-clock"></i> 30 mins</span>
+                        <span><i class="fa-regular fa-eye"></i> 146K views</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> 1.1K likes</span>
+                    </div>
+                    <a href="DalTadka.html">
+                    <button class="watch_btn">Watch Now</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="recipe_card" data-category="non-veg">
+                <img src="images-recipes/tandoori.jpeg">
+                <div class="recipe_info">
+                    <h2>Chicken Tandoori</h2>
+                    <div class="recipe_stats">
+                        <span><i class="fa-regular fa-clock"></i> 35 mins</span>
+                        <span><i class="fa-regular fa-eye"></i> 71K views</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> 520 likes</span>
+                    </div>
+                    <a href="AlooParatha.html">
+                    <button class="watch_btn">Watch Now</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="recipe_card" data-category="south veg">
+                <img src="images-recipes/sambar.jpeg">
+                <div class="recipe_info">
+                    <h2>Sambar</h2>
+                    <div class="recipe_stats">
+                        <span><i class="fa-regular fa-clock"></i> 25 mins</span>
+                        <span><i class="fa-regular fa-eye"></i> 9.2K views</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> 690 likes</span>
+                    </div>
+                    <a href="Butter Chicken.html">
+                    <button class="watch_btn">Watch Now</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="recipe_card" data-category="veg desserts">
+                <img src="images-recipes/rasamalai.jpeg">
+                <div class="recipe_info">
+                    <h2>Rasmalai</h2>
+                    <div class="recipe_stats">
+                        <span><i class="fa-regular fa-clock"></i> 40 mins</span>
+                        <span><i class="fa-regular fa-eye"></i> 8.6K views</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> 610 likes</span>
+                    </div>
+                    <a href="AlooParatha.html">
+                    <button class="watch_btn">Watch Now</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="recipe_card" data-category="veg desserts">
+                <img src="images-recipes/Carrot_halwa.jpeg">
+                <div class="recipe_info">
+                    <h2>Carrot Halwa</h2>
+                    <div class="recipe_stats">
+                        <span><i class="fa-regular fa-clock"></i> 45 mins</span>
+                        <span><i class="fa-regular fa-eye"></i> 63K views</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> 470 likes</span>
+                    </div>
+                    <a href="PaneerTikka.html">
+                    <button class="watch_btn">Watch Now</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="recipe_card" data-category="south non-veg">
+                <img src="images-recipes/Chicken_biriyani .jpeg">
+                <div class="recipe_info">
+                    <h2>CHicken Biriyani</h2>
+                    <div class="recipe_stats">
+                        <span><i class="fa-regular fa-clock"></i> 20 mins</span>
+                        <span><i class="fa-regular fa-eye"></i> 54K views</span>
+                        <span><i class="fa-regular fa-thumbs-up"></i> 390 likes</span>
+                    </div>
+                    <a href="DalTadka.html">
+                    <button class="watch_btn">Watch Now</button>
+                    </a>
+                </div>
+            </div>
+
+
+    </section>
+    <section class="footer">
+        <div class="footer_top">
+            <div class="footer_logo">
+                <img src="images-recipes/logo.jpg">
+                <p>Cook, learn and shop authentic Indian flavors.</p>
+            </div>
+            <div class="footer_social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+
+        </div>
+        <div class="footer_bottom">
+            <p>&copy; 2026 SpiceSphere. All rights reserved.</p>
+        </div>
+
+
+    </section>
+    <script src="./recipe.js"></script>
+</body>
+
+</html>
