@@ -258,7 +258,7 @@ h1, h2, h3 {
     margin-top: 1%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .popular_card_1{
