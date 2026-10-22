@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <section class="nav_bar">
+        <div>
+            <img class="logo" src="images-recipes/logo.jpg">
+        </div>
+        <div class="nav_2">
+            <a href="index.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="online.html">Cooking Classes</a>
+            <a href="products.html">Products</a>
+            <a id="conc" href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="nav_3">
+            <a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a href="#">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            <a href="#">
+                <i id="side_menu" class="fa-solid fa-bars"></i>
+            </a>
+
+        </div>
+
+
+    </section>
+    <section class="slide_menu">
+        <p id="close_menu">X</p>
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="online.html">Cooking Classes</a>
+        <a href="products.html">Products</a>
+        <a id="conc_c" href="contact.html">Contact Us</a>
+    </section>
+
+    <div class="container">
+        <div class="main_img">
+            <img src="./images-recipes/contact_main.jpeg">
+        </div>
+
+        <div class="form_sec">
+
+            <div class="logo_1">
+                <img src="./images-recipes/logo.jpg">
+            </div>
+
+            <h1>Get in touch with us</h1>
+
+            <p class="subtitle">
+                Any questions or remarks? Just write us and we will get back to you!
+            </p>
+
+            <form id="form">
+
+                <div class="name_sec">
+
+                    <div class="name">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" placeholder="Enter your first name">
+                        <p id="firstNameError"></p>
+                    </div>
+
+                    <div class="name">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" placeholder="Enter your last name">
+                        <p id="lastNameError"></p>
+                    </div>
+
+                </div>
+
+
+
+                <div class="email_sec">
+                    <label class="email">Email Address</label>
+                    <input type="text" id="email" placeholder="Enter your email address">
+                    <p id="emailError"></p>
+                </div>
+                <br>
+
+                <div class="text_sec">
+                    <label class="text">Write your message</label>
+
+                    <div class="text_box">
+                        <textarea id="txt" placeholder="Enter your message"></textarea>
+                        <div class="counter">
+                            <span id="counter">0/200 characters</span>
+                            <span>200 characters max</span>
+                        </div>
+
+                        <p id="warning"></p>
+
+                        <button id="sendBtn" type="button" disabled>
+                            Send Message
+                        </button>
+                    </div>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+    <div id="successPopup">
+        <div class="success_box">
+            <div class="success_icon">✓</div>
+
+            <h2>Message Sent</h2>
+
+            <p>Our Agents will get back to you within 24hrs</p>
+
+            <button id="closePopup">
+                Continue
+            </button>
+        </div>
+    </div>
+
+    <section class="footer">
+        <div class="footer_top">
+            <div class="footer_logo">
+                <img src="images-recipes/logo.jpg">
+                <p>Cook, learn and shop authentic Indian flavors.</p>
+            </div>
+            <div class="footer_social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+
+        </div>
+        <div class="footer_bottom">
+            <p>&copy; 2026 SpiceSphere. All rights reserved.</p>
+        </div>
+
+
+    </section>
+    <script src="./recipe.js"></script>
+</body>
+
+</html>
