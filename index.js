@@ -1,14 +1,8 @@
 var navbar_menu_icon = document.getElementById("navbar_menu-icon");
-var sidebar = document.getElementById("sidebar");
-var sidebar_close = document.getElementById("sidebar-close");
 var sidebar_sub_links = document.getElementById("sidebar-sub-links");
 
 navbar_menu_icon.addEventListener("click",function(){
-     if(sidebar_sub_links.classList.contains("hide")){
-        sidebar_sub_links.classList.remove("hide");
-     }else{
-        sidebar_sub_links.classList.add("hide");
-     }
+    sidebar_sub_links.classList.toggle("hide");
 })
 
 // add favorites
