@@ -48,18 +48,19 @@ button:focus, a:focus, input:focus, select:focus {
 .nav-links a:hover, .nav-links a.active { color: #b83226; }
 .nav-links a.active { border-color: #b83226; }
 .nav-icons { display: flex;
-     gap: 6px; }
+     gap: 23px; }
 .nav-icons button, .menu-toggle {
     display: grid;
-    padding: 8px;
+    padding: 0;
     place-items: center;
     background: none;
     color: #4a2419;
     border-radius: 50%;
 }
-.nav-icons button:hover, .menu-toggle:hover { background: #ead8bd; }
+.nav-icons button:hover, .menu-toggle:hover { background: none; color: #f0442e; }
 .menu-toggle { display: none;
-     font-size: 22px; }
+     font-size: 16px; }
+.menu-toggle:hover { color: #4a2419; }
 .cart-btn { position: relative; }
 .cart-count {
     position: absolute;
@@ -272,16 +273,31 @@ button:focus, a:focus, input:focus, select:focus {
          padding: 12px 5%; }
     .navbar .logo img { height: 36px; }
     .menu-toggle { display: grid;
-         order: 2;
-          margin-left: auto; }
-    .nav-icons { order: 3; }
-    .nav-links { display: none;
+         order: 3;
+          margin-left: 23px; }
+    .nav-icons { order: 2;
+         gap: 16px; }
+    .nav-links {
          flex-direction: column;
           order: 4;
            gap: 4px;
             width: 100%;
-             padding-top: 8px; }
-    .nav-links.open { display: flex; }
+             display: flex;
+              max-height: 0;
+               padding-top: 0;
+                overflow: hidden;
+                 opacity: 0;
+                  pointer-events: none;
+                   transform: translateY(-8px);
+                    visibility: hidden;
+                     transition: max-height .3s ease, opacity .2s ease, padding .3s ease, transform .3s ease, visibility 0s linear .3s; }
+    .nav-links.open { max-height: 320px;
+         padding-top: 8px;
+          opacity: 1;
+           pointer-events: auto;
+            transform: translateY(0);
+             visibility: visible;
+              transition-delay: 0s; }
     .hero { min-height: 260px;
          padding: 40px 5%; }
     .hero-text, .search { max-width: 100%; }
