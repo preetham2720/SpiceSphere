@@ -232,9 +232,6 @@ h1, h2, h3 {
     cursor: pointer;
 }
 
-.popular-sub1{
-    color: #4A2419;
-}
 
 .popular{
     margin-top: 5%;
@@ -243,6 +240,7 @@ h1, h2, h3 {
 }
 
 .popular-sub1{
+    color: #4A2419;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -250,6 +248,12 @@ h1, h2, h3 {
 
 
 .popular-sub1 a{
+    text-decoration: none;
+    color: #4A2419;;
+    cursor: pointer;
+}
+
+.popular-sub1 a:hover{
     color: #F0442E;
     cursor: pointer;
 }
