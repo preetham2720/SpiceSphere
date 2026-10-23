@@ -376,7 +376,12 @@ h1, h2, h3 {
     color: #F7D98B;
 }
 
-.footer-section1-sub-2 p:hover{
+.footer-section1-sub-2 a{
+    color: #FFF8EC;
+    text-decoration: none;
+}
+
+.footer-section1-sub-2 a:hover{
     color: #F7D98B;
     cursor: pointer;
 }
@@ -401,11 +406,21 @@ h1, h2, h3 {
     flex-grow: 1;
 }
 
+.footer-section2-sub1 a{
+    text-decoration: none;
+    color: #FFF8EC;
+}
+
 .footer-section2-sub1 h4, .footer-section2-sub2 h4{
     color: #F7D98B;
 }
 
-.footer-section2-sub1 p:hover, .footer-section2-sub2 p:hover{
+.footer-section2-sub1 p:hover, .footer-section2-sub2 p:hover, .footer-section2-sub1 a:hover{
+    color: #F7D98B;
+    cursor: pointer;
+}
+
+.footer-section2-sub1 a:hover{
     color: #F7D98B;
     cursor: pointer;
 }
