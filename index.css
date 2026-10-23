@@ -255,7 +255,7 @@ h1, h2, h3 {
 }
 
 .popular_card{
-    margin-top: 1%;
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -365,7 +365,7 @@ h1, h2, h3 {
 }
 
 .footer-section1-sub-2{
-    padding-top: 6%;
+    padding-top: 4%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -398,6 +398,7 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex-grow: 1;
 }
 
 .footer-section2-sub1 h4, .footer-section2-sub2 h4{
@@ -497,6 +498,25 @@ h1, h2, h3 {
     transition: all 1s ease-in-out;
 }
 
+@media (min-width: 768px) { 
+    .popular_card{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .popular_card_1{
+        flex-grow: 1;
+        flex-basis: 40%;
+    }
+
+    .footer-section1-sub-1{
+        width: 300px;
+    }
+
+    .footer-section2-sub1{
+        width: 300px;
+    }
+}
 
 @media (min-width: 1024px) { 
     .navbar img{
@@ -532,14 +552,8 @@ h1, h2, h3 {
         gap: 10px;
     }
 
-    .popular_card{
-        flex-direction: row;
-        gap: 20px;
-    }
-
     .popular_card_1{
-        flex-grow: 1;
-        flex-basis: 25%;
+        flex-basis: 20%;
     }
 
     .footer-section1-sub-1{
@@ -551,6 +565,7 @@ h1, h2, h3 {
     }
 
     .footer-section1-sub-2{
+        padding-top: 6%;
         font-size: 1vw;
     }
 
