@@ -501,6 +501,7 @@ h1, h2, h3 {
 @media (min-width: 768px) { 
     .popular_card{
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 20px;
     }
 
