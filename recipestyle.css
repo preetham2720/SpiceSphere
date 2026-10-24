@@ -412,7 +412,9 @@ color: white;
 .footer_bottom p{
     background-color: transparent;
 }
-
+body::-webkit-scrollbar {
+    display: none;
+}
 
 
 @media screen and ( max-width: 900px) {

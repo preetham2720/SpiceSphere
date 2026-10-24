@@ -483,7 +483,9 @@ color: white;
     font-size: 13px;
     overflow-wrap: anywhere;
 }
-
+body::-webkit-scrollbar {
+    display: none;
+}
 
 
     

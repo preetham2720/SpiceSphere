@@ -232,9 +232,6 @@ h1, h2, h3 {
     cursor: pointer;
 }
 
-.popular-sub1{
-    color: #4A2419;
-}
 
 .popular{
     margin-top: 5%;
@@ -243,6 +240,7 @@ h1, h2, h3 {
 }
 
 .popular-sub1{
+    color: #4A2419;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -250,12 +248,18 @@ h1, h2, h3 {
 
 
 .popular-sub1 a{
+    text-decoration: none;
+    color: #4A2419;;
+    cursor: pointer;
+}
+
+.popular-sub1 a:hover{
     color: #F0442E;
     cursor: pointer;
 }
 
 .popular_card{
-    margin-top: 1%;
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -365,7 +369,7 @@ h1, h2, h3 {
 }
 
 .footer-section1-sub-2{
-    padding-top: 6%;
+    padding-top: 4%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -376,7 +380,12 @@ h1, h2, h3 {
     color: #F7D98B;
 }
 
-.footer-section1-sub-2 p:hover{
+.footer-section1-sub-2 a{
+    color: #FFF8EC;
+    text-decoration: none;
+}
+
+.footer-section1-sub-2 a:hover{
     color: #F7D98B;
     cursor: pointer;
 }
@@ -398,13 +407,24 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex-grow: 1;
+}
+
+.footer-section2-sub1 a{
+    text-decoration: none;
+    color: #FFF8EC;
 }
 
 .footer-section2-sub1 h4, .footer-section2-sub2 h4{
     color: #F7D98B;
 }
 
-.footer-section2-sub1 p:hover, .footer-section2-sub2 p:hover{
+.footer-section2-sub1 p:hover, .footer-section2-sub2 p:hover, .footer-section2-sub1 a:hover{
+    color: #F7D98B;
+    cursor: pointer;
+}
+
+.footer-section2-sub1 a:hover{
     color: #F7D98B;
     cursor: pointer;
 }
@@ -497,6 +517,26 @@ h1, h2, h3 {
     transition: all 1s ease-in-out;
 }
 
+@media (min-width: 768px) { 
+    .popular_card{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .popular_card_1{
+        flex-grow: 1;
+        flex-basis: 40%;
+    }
+
+    .footer-section1-sub-1{
+        width: 300px;
+    }
+
+    .footer-section2-sub1{
+        width: 300px;
+    }
+}
 
 @media (min-width: 1024px) { 
     .navbar img{
@@ -532,14 +572,8 @@ h1, h2, h3 {
         gap: 10px;
     }
 
-    .popular_card{
-        flex-direction: row;
-        gap: 20px;
-    }
-
     .popular_card_1{
-        flex-grow: 1;
-        flex-basis: 25%;
+        flex-basis: 20%;
     }
 
     .footer-section1-sub-1{
@@ -551,6 +585,7 @@ h1, h2, h3 {
     }
 
     .footer-section1-sub-2{
+        padding-top: 6%;
         font-size: 1vw;
     }
 
